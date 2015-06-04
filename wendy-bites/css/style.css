@@ -5,6 +5,10 @@ body {
   line-height: 24px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6, p, a, li, blockquote {
   padding-top: 20px;
   font-family: 'Helvetica', sans-serif;
@@ -13,4 +17,32 @@ h1, h2, h3, h4, h5, h6, p, a, li, blockquote {
 blockquote {
   font-style: italic;
   font-size: 24px;
+}
+
+#container {
+  width: 60%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  background: #cdefdc;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+.button {
+  display: block;
+  background: #cdefdc;
+  padding: 8px;
+  text-decoration: none;
+  color: #020202;
+  font-weight: bold;
+  text-align: center;
 }

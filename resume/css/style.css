@@ -1,0 +1,90 @@
+
+body {
+  font-size: 16px;
+  color: black;
+  background: #f8db15;
+  font-family: "Futura";
+  font-weight: lighter;
+  margin: 0;
+}
+
+.navigation {
+  background-color: #000000;
+  margin: 0;
+  border: 0;
+  padding: 8px;
+}
+
+.navigation > ul {
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+}
+
+.navigation > ul > li {
+  text-decoration:none;
+  display: inline;
+  padding: 0 8px 0 8px;
+}
+
+.navigation > ul > li > a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+header, section {
+  font-weight: lighter;
+  margin: 0 auto;
+  padding: 0px;
+  max-width: 600px;
+}
+
+.summary {
+  background-color: #ffffff;
+  width: 100%;
+  height: 320px;
+  position: absolute;
+}
+
+.summary_copy {
+  position: relative;
+  margin: 0 auto;
+  padding: 72px;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-align: center;
+  padding: 80px;
+}
+
+h2, h3, h4 {
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+footer {
+  background-color: #000000;
+  margin: 0;
+  border: 0;
+  padding: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.footerlinks {
+  padding: 8px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+}
