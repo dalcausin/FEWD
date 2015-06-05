@@ -1,3 +1,4 @@
+/* Default alignment of content*/
 
 body {
   font-size: 16px;
@@ -8,23 +9,45 @@ body {
   margin: 0;
 }
 
+section {
+  font-weight: lighter;
+  margin: 0 auto;
+  padding: 10% 24%;
+}
+
+/* ----This code removes the bullet points from unordered lists ----*/
+
+/*ul {
+  display: table;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: table-row;
+}*/
+
+/*------------------------------------------------------------------*/
+
+/* Navigation styling */
+
 .navigation {
   background-color: #000000;
-  margin: 0;
-  border: 0;
-  padding: 8px;
+  margin:0;
+  padding: 1%;
 }
 
 .navigation > ul {
   list-style-type: none;
   padding: 0px;
-  text-align: center;
 }
 
 .navigation > ul > li {
   text-decoration:none;
   display: inline;
   padding: 0 8px 0 8px;
+  text-align: center;
 }
 
 .navigation > ul > li > a {
@@ -33,37 +56,87 @@ body {
   letter-spacing: 1px;
 }
 
-header, section {
-  font-weight: lighter;
-  margin: 0 auto;
-  padding: 0px;
-  max-width: 600px;
+#summary {
+  background: #ffffff;
+  padding: 16% 24%;
 }
 
-.summary {
-  background-color: #ffffff;
-  width: 100%;
-  height: 320px;
-  position: absolute;
-}
-
-.summary_copy {
+/*#capability {
   position: relative;
-  margin: 0 auto;
-  padding: 72px;
+  padding: 10% 24%;
+  height: 300%;
+}
+
+#capability_1 {
+  position: absolute;
+  top: 56%;
+  left: 24%;
+  width: 24%;
+}
+
+#capability_2 {
+  position: absolute;
+  bottom: -29%;
+  right: 24%;
+  width: 24%;
+}*/
+
+#skills, #highlights {
+  background: #ffffff;
+  padding: 10% 24%;
+  line-height: 24px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 60px;
   letter-spacing: 2px;
   font-weight: 400;
+  padding-top: 16%;
+  padding-bottom: 16%;
   text-align: center;
-  padding: 80px;
+  margin: 0;
 }
 
-h2, h3, h4 {
+h2 {
+  font-size: 28px;
   letter-spacing: 1px;
   font-weight: 200;
+  margin: 0;
+  padding-bottom: 4%;
+  padding-top: 4%;
+}
+
+h3 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin: 0;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+h4 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin: 0;
+  padding-top: 4%;
+  padding-bottom: 0%;
+}
+
+h5 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin: 0;
+  padding-top: 4%;
+  padding-bottom: 0%;
+}
+
+p, li {
+  margin: 0;
+  padding-top: 1%;
+  line-height: 22px;
 }
 
 footer {
@@ -78,8 +151,8 @@ footer {
   letter-spacing: 1px;
 }
 
-.footerlinks {
-  padding: 8px;
+a img {
+  margin: 1%;
 }
 
 @media (max-width: 600px) {

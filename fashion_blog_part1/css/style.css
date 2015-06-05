@@ -1,0 +1,109 @@
+/*
+Project Name: Fashion Blog
+Client: FEWD
+Author: D Alcausin
+Developer @GA in LA
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #121212;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Lato', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+body {
+	width: 100%;
+  height:100%;
+	margin: 0;
+  padding: 0;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+header h1 a {
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+nav a {
+  color: #cccccc;
+  font-size: 24px;
+  padding: 0 16px 0 0;
+  font-weight: 300;
+}
+
+article {
+  width: 900px;
+}
+
+h3 {
+  font-size: 40px;
+  color: #cccccc;
+  font-weight: 300;
+  margin: 40px auto 0 auto;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.firstcharacter {
+    color: #cccccc;
+    float: left;
+    font-size: 96px;
+    line-height: 81px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  float: left;
+  line-height: 28px;
+}
+
+h4 a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff0000;
+  text-decoration: none;
+}
+
+h4 {
+  text-align: right;
+}
