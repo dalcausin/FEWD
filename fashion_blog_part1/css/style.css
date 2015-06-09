@@ -22,7 +22,7 @@ Developer @GA in LA
 /*******************************************/
 
 body {
-     color: #121212;
+     color: #3e3e3e;
      font-size: 12px;
      line-height: 1.4;
      font-family: 'Lato', sans-serif;
@@ -150,11 +150,16 @@ h4 {
 }
 
 hr {
-  display: block;
+  /*display: block;*/
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 0.5px solid #e0e0e0;
+  border: none;
+  background-color: #ff0000;
   width: 687px;
+  height: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 1px;
 }
 
 ul {
