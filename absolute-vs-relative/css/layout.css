@@ -1,0 +1,54 @@
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+header {
+  position: relative;
+  padding: 40px;
+  background: #00FF00;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+
+section{
+  position: relative;
+  padding: 40px;
+  background: #63DCEF;
+  border-bottom: 1px solid #DCDCDC;
+  width: 80%;
+  float: right;
+}
+
+section h4 {
+  position: absolute;
+  top: 2.0em;
+  right: 40px;
+}
+
+.section-aside {
+  float: right;
+  width: 30%;
+  margin-top: 80px;
+  padding-left: 40px;
+}
+
+.section-content {
+  float: left;
+  width: 70%;
+}
+
+aside {
+  position: relative;
+  padding: 40px;
+  background: #EF63DC;
+  width: 20%;
+  float: left;
+}
+
+footer {
+  position: relative;
+  padding: 40px;
+  background: #EF63DC;
+  clear: both;
+}

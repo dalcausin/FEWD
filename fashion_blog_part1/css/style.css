@@ -5,29 +5,7 @@ Author: D Alcausin
 Developer @GA in LA
 */
 
-
-/******************************************
-/* SETUP
-/*******************************************/
-
-/* Box Model Hack */
-* {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
-}
-
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-body {
-     color: #3e3e3e;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: 'Lato', sans-serif;
-}
-
+@import url('base.css');
 
 /******************************************
 /* LAYOUT
@@ -41,60 +19,81 @@ body {
   padding: 0;
 }
 
+header {
+  margin-left: 54px;
+}
+
+article h2 {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 720px;
+	margin-top: 12px;
+}
+
+article {
+	width: 720px;
+  margin-left: 54px;
+}
+
+footer {
+  margin-left: 54px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+h5 {
+  margin-top: 20px;
+}
+
+.firstcharacter {
+  float: left;
+  padding-top: 4px;
+  padding-right: 10px;
+  padding-left: 0px;
+  margin-left: -10px;
+}
+
+hr {
+  margin-left: 54px;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-header {
-  margin-left: auto;
-  margin-right: auto;
-  width: 687px;
+
+.sitename {
+	position: relative;
+	float: left;
+	margin-top: 55px;
 }
 
-header h1 a {
+.sitesub {
+	position: relative;
+	float: left;
+	margin-top: 55px;
+	top: 29px;
+	left: 32px;
+}
+
+.sitename a {
   color: #e9363a;
   text-decoration: none;
   font-size: 52px;
   font-weight: 300;
-  padding: 0;
   letter-spacing: 0.5px;
 }
 
-h2 {
+.sitesub {
   font-size: 26px;
   font-weight: 300;
-  padding: 0;
-  margin-top: -10px;
-  margin-bottom: 20px;
-  letter-spacing: 0.5px;
-}
-
-nav a {
-  color: #dfdfdf;
-  font-size: 22px;
-  padding: 0 19px 0 0;
-  font-weight: 300;
-  text-decoration: none;
-  letter-spacing: 0.1px;
-}
-
-.nav {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 2px solid #dfdfdf;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-article {
-  width: 686px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-img {
-  width: 686px;
-  height: 228px;
-  margin-top: 12px;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -105,11 +104,39 @@ h3 {
   margin-bottom: 0px;
 }
 
+nav {
+	clear: both;
+	padding-top: 5px;
+}
+
+nav ul {
+	padding: 0px;
+	margin-top: 0px;
+	font-size: 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 179px;
+	height: 64px;
+	background: #000000;
+	text-align: center;
+	padding: 16px;
+	margin-left: 1px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: 300;
+	color: #ffffff;
+}
+
 article h2 {
   margin-top: 6px;
   margin-bottom: 0px;
   font-size: 36px;
-  letter-spacing: normal;
+	font-weight: 300;
 }
 
 h2 a {
@@ -118,14 +145,9 @@ h2 a {
 }
 
 .firstcharacter {
-    color: #dfdfdf;
-    float: left;
-    font-size: 105px;
-    line-height: 82px;
-    padding-top: 4px;
-    padding-right: 10px;
-    padding-left: 0px;
-    margin-left: -10px;
+  color: #dfdfdf;
+  font-size: 105px;
+  line-height: 82px;
 }
 
 p {
@@ -150,33 +172,23 @@ h4 {
 }
 
 hr {
-  /*display: block;*/
-  margin-left: auto;
-  margin-right: auto;
   border: none;
   background-color: #dddddd;
   width: 687px;
-  height: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   height: 1px;
 }
 
-ul {
+footer ul {
   font-size: 18px;
-  margin-left: auto;
-  margin-right: auto;
   width: 687px;
   padding-left: 0px;
-  margin-top: 50px;
-  margin-bottom: 0px;
 }
 
-li {
+footer li {
   display: inline;
 }
 
-ul li a {
+footer ul li a {
   text-decoration: none;
   font-weight: 300;
   color: #e9363a;
@@ -191,7 +203,4 @@ h5 {
   color: #c2c2c2;
   font-weight: 300;
   width: 687px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
 }

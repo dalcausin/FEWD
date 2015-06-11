@@ -15,23 +15,6 @@ section {
   padding: 10% 24%;
 }
 
-/* ----This code removes the bullet points from unordered lists ----*/
-
-/*ul {
-  display: table;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  display: table-row;
-}*/
-
-/*------------------------------------------------------------------*/
-
-/* Navigation styling */
-
 .navigation {
   background-color: #000000;
   margin:0;
@@ -68,25 +51,10 @@ li {
   text-align: center;
 }
 
-/*#capability {
-  position: relative;
-  padding: 10% 24%;
-  height: 300%;
+#aboutme p {
+  width: 88%;
+  margin: 0 auto;
 }
-
-#capability_1 {
-  position: absolute;
-  top: 56%;
-  left: 24%;
-  width: 24%;
-}
-
-#capability_2 {
-  position: absolute;
-  bottom: -29%;
-  right: 24%;
-  width: 24%;
-}*/
 
 #skills, #highlights {
   background: #ffffff;
