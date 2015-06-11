@@ -1,4 +1,25 @@
-/* Default alignment of content*/
+/*
+Project Name: Resume
+Client: NA
+Author: DA
+Developer @GA in LA
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
 
 body {
   font-size: 16px;
@@ -9,44 +30,36 @@ body {
   margin: 0;
 }
 
+/******************************************
+/* LAYOUT
+/*******************************************/
+
 section {
-  font-weight: lighter;
   margin: 0 auto;
   padding: 10% 24%;
 }
 
 .navigation {
-  background-color: #000000;
   margin:0;
   padding: 1%;
   text-align: center;
 }
 
 .navigation > ul {
-  list-style-type: none;
   padding: 0px;
 }
 
 .navigation > ul > li {
-  text-decoration:none;
   display: inline;
   padding: 0 8px 0 8px;
   text-align: center;
 }
 
-.navigation > ul > li > a {
-  color: #ffffff;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
-
 #summary {
-  background: #ffffff;
   padding: 16% 24%;
 }
 
 #aboutme {
-  background: #ffffff;
   padding: 16% auto;
   text-align: center;
 }
@@ -57,15 +70,10 @@ section {
 }
 
 #skills, #highlights {
-  background: #ffffff;
   padding: 10% 24%;
-  line-height: 24px;
 }
 
 h1 {
-  font-size: 60px;
-  letter-spacing: 2px;
-  font-weight: 400;
   padding-top: 16%;
   padding-bottom: 16%;
   text-align: center;
@@ -73,36 +81,24 @@ h1 {
 }
 
 h2 {
-  font-size: 28px;
-  letter-spacing: 1px;
-  font-weight: 200;
   margin: 0;
   padding-bottom: 4%;
   padding-top: 4%;
 }
 
 h3 {
-  font-size: 24px;
-  letter-spacing: 2px;
-  font-weight: 200;
   margin: 0;
   padding-top: 4%;
   padding-bottom: 4%;
 }
 
 h4 {
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-weight: 200;
   margin: 0;
   padding-top: 4%;
   padding-bottom: 0%;
 }
 
 h5 {
-  font-size: 16px;
-  letter-spacing: 2px;
-  font-weight: 200;
   margin: 0;
   padding-top: 4%;
   padding-bottom: 0%;
@@ -111,19 +107,13 @@ h5 {
 p, li {
   margin: 0;
   padding-top: 1%;
-  line-height: 22px;
 }
 
 footer {
-  background-color: #000000;
   margin: 0;
   border: 0;
   padding: 16px;
-  color: #ffffff;
-  text-decoration: none;
   text-align: center;
-  font-size: 12px;
-  letter-spacing: 1px;
 }
 
 a img {
@@ -137,9 +127,89 @@ a img {
   border-radius: 100%;
 }
 
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+section {
+  font-weight: lighter;
+}
+
+.navigation {
+  background-color: #000000;
+}
+
+.navigation > ul {
+  list-style-type: none;
+}
+
+.navigation > ul > li {
+  text-decoration:none;
+}
+
+.navigation > ul > li > a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+#summary {
+  background: #ffffff;
+}
+
+#aboutme {
+  background: #ffffff;
+}
+
+#skills, #highlights {
+  background: #ffffff;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 3.75em;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.75em;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+h4 {
+  font-size: 1.25em;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+h5 {
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+p, li {
+  line-height: 22px;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 32px;
   }
-
 }
