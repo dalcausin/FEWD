@@ -1,0 +1,169 @@
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+body {
+	width: 100%;
+  height:100%;
+	margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-left: 54px;
+}
+
+.sitename {
+	float: left;
+	margin-top: 55px;
+}
+
+.sitesub {
+	position: relative;
+	float: left;
+	margin-top: 55px;
+	top: 29px;
+	left: 32px;
+}
+
+nav {
+	clear: both;
+	padding-top: 5px;
+}
+
+nav ul {
+	padding: 0px;
+	margin-top: 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 179px;
+	height: 64px;
+	text-align: center;
+	padding: 16px;
+	margin-left: 1px;
+}
+
+article h2 {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 720px;
+	margin-top: 12px;
+}
+
+article {
+	width: 720px;
+  margin-left: 54px;
+}
+
+h3 {
+  margin-top: 56px;
+  margin-bottom: 0px;
+}
+
+article h2 {
+  margin-top: 6px;
+  margin-bottom: 0px;
+}
+
+.firstcharacter {
+  float: left;
+  padding-top: 6px;
+  padding-right: 10px;
+  padding-left: 0px;
+  margin-left: -10px;
+}
+
+p {
+  float: left;
+  margin-top: 20px;
+	margin-bottom: 28px;
+}
+
+h4 {
+  text-align: right;
+  padding-bottom: 15px;
+}
+
+.content {
+	float: left;
+	width: 720px;
+	top: 200px;
+	left: 0;
+}
+
+.content hr {
+  margin-left: 54px;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+	width: 720px;
+	height: 1px;
+}
+
+aside {
+	float: right;
+	width: 313px;
+	top: 0;
+	right: 0;
+	margin-right: 145px;
+	margin-top: 102px;
+}
+
+h6 {
+	margin-bottom: 8px;
+	margin-top: 30px;
+}
+
+aside hr {
+	margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+	width: 313px;
+	height: 1px;
+}
+
+.ad {
+	width: 300px;
+	height: 250px;
+	margin: 27px auto;
+}
+
+.ad p {
+	padding-left: 107px;
+	padding-top: 97px;
+}
+
+.popular_posts ul {
+	padding-left: 20px;
+ 	margin-left: 0;
+ 	padding-left: 42px;
+ 	text-indent: -24px;
+	padding-top: 8px;
+}
+
+.popular_posts ul li:before {
+  padding-right: 12px;
+  top: 10px;
+}
+
+footer {
+  margin-left: 54px;
+  margin-bottom: 0px;
+	clear: both;
+	padding-top: 30px;
+}
+
+footer ul {
+  width: 687px;
+  padding-left: 0px;
+}
+
+h5 {
+  margin-top: 30px;
+}
