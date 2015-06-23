@@ -12,12 +12,14 @@ Element.prototype.Slider = function(){
   var slider = this,
       wrapper = slider.children[0],
       slides = wrapper.children,
+
       // initialize position, width
       position = 0,
       width = window.innerWidth,
       // create two divs for buttons
       leftBtn = document.createElement('div'),
       rightBtn = document.createElement('div');
+      hamburgerBtn = document.createElement('div');
 
   // Create buttons for sliding the Slider left and right
 
@@ -27,8 +29,21 @@ Element.prototype.Slider = function(){
 
     leftBtn.classList.add('left');
     rightBtn.classList.add('right');
+    hamburgerBtn.classList.add('hamburger');
 
     // add EventListeners to buttons, activating the CSS transition
+
+    hamburgerBtn.addEventListener('mousedown',function(){
+      if(position === 0){
+        position = position + 240;
+        gallery.style.marginLeft = position + "px";
+      }
+      else if(position !== 0){
+        position = position - 240;
+        gallery.style.marginLeft = position + "px";
+      }
+
+    });
 
     leftBtn.addEventListener('mousedown',function(){
       if(position > (width * (slides.length - 1)) * -1){
@@ -44,10 +59,13 @@ Element.prototype.Slider = function(){
       }
     });
 
+
     // append the buttons to the Slider
 
     slider.appendChild(leftBtn);
     slider.appendChild(rightBtn);
+    slider.appendChild(hamburgerBtn);
+
 
   };
 
