@@ -4,47 +4,56 @@ Element.prototype.Gallery = function(){
   var gallery = this;
   var ul = gallery.children[0];
   var photos = new Object();
+  var container = document.getElementById('container')
 
 
   // Define global variables
 
   this.singlePhoto = function(ev) {
 
-  var ev = event.target;
+/*  --myattempt--
+    var ev = event.target;
 
-  console.log(ev.style.backgroundImage);
+    console.log(ev.style.backgroundImage);
 
-  var img = ev.style.backgroundImage;
+    var img = ev.style.backgroundImage;
 
-  var single = document.createElement('div');
+    var single = document.createElement('div');
 
-  single.classList.add('single-photo');
+    single.classList.add('single-photo');
 
-  single.style.opacity='1';
-  single.style.backgroundImage = ("img");
+    single.style.opacity='1';
+    single.style.backgroundImage = ("img");
 
+    singlePhoto.appendChild(single);
+*/
 
-  singlePhoto.appendChild(single);
+    console.log(ev.target.style.backgroundImage);
+    var section = document.createElement('section');
 
+    section.innerHTML = ev.target.innerHTML;
+    section.style.backgroundImage = ev.target.style.backgroundImage;
+    section.classList.add('single-photo');
 
-  /*photos.forEach(function(photo){
+/*  -- Not required as we have assigned a class to the section --
+    section.style.backgroundRepeat = 'no-repeat';
+    section.style.backgroundSize = 'contain';
+    section.style.backgroundPosition = 'center center';
+    section.style.height = '100%';*/
 
-      var singlePhoto = document.getElementById('singlePhoto');
+    var p = document.createElement('p');
+    p.innerHTML = ev.target.dataset.description;
 
-      singlePhoto.classList.add('single-photo');
+    var closeButton = document.createElement('div');
+    closeButton.classList.add('close');
 
-      singlePhoto.style.backgroundImage = 'url("'+photo.image_url+'")';
-      singlePhoto.style.opacity='1';
-      singlePhoto.style.backgroundSize='auto';
-      singlePhoto.innerHTML = '<div class="meta"><h2>'+
-          photo.name+
-          '</h2><h3>'+
-          photo.user.fullname+
-          '</h3></div><div class="stats"><div>'+
-          photo.rating+'</div></div>';
+    closeButton.addEventListener('click',function(){
+        section.style.display = 'none';
+    });
 
-
-    });*/
+    section.children[0].appendChild(p);
+    section.appendChild(closeButton);
+    container.appendChild(section);
 
   };
 
@@ -66,6 +75,8 @@ Element.prototype.Gallery = function(){
             photo.user.fullname+
             '</h6></div><div class="stats"><div>'+
             photo.rating+'</div></div>';
+
+        li.dataset.description = photo.description;
 
         li.addEventListener('mousedown',gallery.singlePhoto);
 

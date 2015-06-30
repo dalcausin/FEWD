@@ -8,7 +8,9 @@ function Thermostat(){
   var downButton = document.getElementById('down');
   var temperatureText = document.getElementById('temp');
   var body = document.getElementsByTagName('body')[0];
+  //var test = document.getElementById('temp').innerHTML;
 
+  //console.log(test);
   console.log(body);
 
   var convertTempToColor = function(temp){

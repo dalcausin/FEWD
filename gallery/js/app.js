@@ -6,3 +6,6 @@ navElement.Nav();
 
 var galleryElement = document.getElementById('gallery');
 galleryElement.Gallery();
+
+var contactElement = document.getElementById('contact');
+contactElement.Contact();
