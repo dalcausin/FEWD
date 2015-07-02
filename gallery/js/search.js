@@ -1,7 +1,30 @@
 Element.prototype.Search = function() {
 
 
-  var gallery = document.getElementById('gallery'),
+  var gallery = document.getElementById('gallery');
+  var search = this;
+  var input = this.children[0];
+
+  this.init = function (){
+    input.addEventListener('focus',function(){
+      this.value = '';
+    });
+
+    input.addEventListener('keyup',function(ev){
+      // console.log(ev.keyCode);
+      if(ev.keyCode == 13){
+        var find = input.value; // assign var to input in search field
+        gallery.filterPhotos(find); // run gallery.js function
+      };
+    });
+  };
+
+  this.init();
+
+};
+
+
+/**
       search = document.getElementById('search'),
       searchValue = document.getElementsByTagName('input')[0].value,
       photos = new Object();
@@ -14,23 +37,17 @@ Element.prototype.Search = function() {
     };
   };
 
-  // MY SOLUTION: after the user presses 'Enter/Return' filter the gallery <li> using tags from the JSON model
+  // MY SOLUTION after the user presses 'Enter/Return' filter the gallery <li> using tags from the JSON model
 
     // loop through images to find tags that equal
     // if equal to search word
 
   search.find = function(ev) {
-
-    searchValue = ev.target.value;
-
+    // searchValue = ev.target.value;
     photos.forEach(function(photo,index){
-
-      console.log(searchValue);
-
+      // console.log(searchValue);
     });
-
   };
-
 
 
   search.connect = function(){
@@ -63,6 +80,4 @@ Element.prototype.Search = function() {
   };
 
   init();
-
-
-};
+**/

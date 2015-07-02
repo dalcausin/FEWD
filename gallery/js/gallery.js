@@ -28,11 +28,11 @@ Element.prototype.Gallery = function(){
     section.style.backgroundImage = ev.target.style.backgroundImage;
     section.classList.add('single-photo');
 
-/*  -- Not required as we have assigned a class to the section --
-    section.style.backgroundRepeat = 'no-repeat';
-    section.style.backgroundSize = 'contain';
-    section.style.backgroundPosition = 'center center';
-    section.style.height = '100%';*/
+// -- Not required as we have assigned a class to the section --
+//     section.style.backgroundRepeat = 'no-repeat';
+//     section.style.backgroundSize = 'contain';
+//     section.style.backgroundPosition = 'center center';
+//     section.style.height = '100%';
 
     var p = document.createElement('p');
     p.innerHTML = ev.target.dataset.description;
@@ -47,6 +47,35 @@ Element.prototype.Gallery = function(){
     section.children[0].appendChild(p);
     section.appendChild(closeButton);
     container.appendChild(section);
+
+  };
+
+  this.filterPhotos = function(query) {
+    console.log(query);
+    for(var i=0; i<ul.children.length; i++) {
+
+      var tags = ul.children[i].dataset.tags;  // grab tags!
+      var arr = tags.split(','); // this converts everything back to an array
+      var matched = false;
+
+      arr.forEach(function(tag){
+        if(tag === query) { // check if a tag is equal to the query
+          ul.children[i].style.display = 'block'; //effect of showing li     // if there is a match show the li
+          matched = true;
+        }
+      });
+
+      // if it isn't a match hide the li
+      if(matched===false){
+        ul.children[i].style.display = 'none';
+      }
+
+      // return all photos in gallery
+      if(query ==='all'){
+        ul.children[i].style.display = 'block';
+      }
+
+    };
 
   };
 
@@ -69,8 +98,16 @@ Element.prototype.Gallery = function(){
             '</h6></div><div class="stats"><div>'+
             photo.rating+'</div></div>';
 
-// setting data attributes
+        // creating an array of tags and filling it with tags below
+        var tags = [];
+        photo.tags.forEach(function(tag){
+          tags.push(tag.toLowerCase());
+        });
+        // setting data attributes - adding tags
+        li.dataset.tags = tags;
+        // setting data attributes - adding photo description
         li.dataset.description = photo.description;
+
 
         li.addEventListener('mousedown',gallery.singlePhoto);
 
