@@ -11,22 +11,15 @@ Element.prototype.Gallery = function(){
 
   this.singlePhoto = function(ev) {
 
-/*  --myattempt--
-    var ev = event.target;
-
-    console.log(ev.style.backgroundImage);
-
-    var img = ev.style.backgroundImage;
-
-    var single = document.createElement('div');
-
-    single.classList.add('single-photo');
-
-    single.style.opacity='1';
-    single.style.backgroundImage = ("img");
-
-    singlePhoto.appendChild(single);
-*/
+  // --myattempt--
+  //   var ev = event.target;
+  //   console.log(ev.style.backgroundImage);
+  //   var img = ev.style.backgroundImage;
+  //   var single = document.createElement('div');
+  //   single.classList.add('single-photo');
+  //   single.style.opacity='1';
+  //   single.style.backgroundImage = ("img");
+  //   singlePhoto.appendChild(single);
 
     console.log(ev.target.style.backgroundImage);
     var section = document.createElement('section');
@@ -76,6 +69,7 @@ Element.prototype.Gallery = function(){
             '</h6></div><div class="stats"><div>'+
             photo.rating+'</div></div>';
 
+// setting data attributes
         li.dataset.description = photo.description;
 
         li.addEventListener('mousedown',gallery.singlePhoto);
