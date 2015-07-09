@@ -1,0 +1,33 @@
+{
+  "users":[{
+        "name":"Diana",
+        "age":"30",
+        "occupation":"Designer"
+      },
+      {
+        "name":"Josh",
+        "age":"32",
+        "occupation":"Product Manager"
+      },
+      {
+        "name":"Mary",
+        "age":"28",
+        "occupation":"Software Developer"
+      },
+      {
+        "name":"Wendy",
+        "age":"42",
+        "occupation":"QA Tester"
+      },
+      {
+        "name":"Lee",
+        "age":"30",
+        "occupation":"iOS Developer"
+      },
+      {
+        "name":"Jane",
+        "age":"29",
+        "occupation":"Copywriter"
+      }
+      ]
+}
