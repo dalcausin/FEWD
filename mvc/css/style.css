@@ -54,4 +54,25 @@ body {
   left: 50%;
   width: 66.6666666667%;
   margin-left: -33.3333333333%;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+.user {
+  width: 29.333333333%;
+  padding: 4% 2%;
+  margin: 2% 2%;
+  position: relative;
+  float: left;
+  background: white;
+  text-align: center;
+  border-radius: 8px;
+  transform: translate3d(0px,60px,-60px);
+  opacity: 0;
+  transition: opacity 1.2s, transform 1.0s;
+}
+
+.active {
+  opacity: 1.0;
+  transform: translate3d(0px,0px,0px);
 }
