@@ -1,0 +1,43 @@
+@media only screen and (max-width: 320px) {
+  /*sets css for screens less than 320px width, small mobile portrait*/
+  body {
+    font-size: 12px;
+  }
+  .gallery ul li {
+    width: 100vw;
+    height: 100vw; /*works similar to percentages but in context of device*/
+  }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+  /*all screens between 321px and 767px larger phones/phablets*/
+  body {
+    font-size: 14px;
+  }
+  .gallery ul li {
+    width: 50vw;
+    height: 50vw;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+  /*cover portrait on most tablet devices*/
+
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+  /*cover most desktop & tablet landscape*/
+  body {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+  /*all deskptops beyond - eg 4K*/
+  body {
+    font-size: 20px;
+  }
+}
