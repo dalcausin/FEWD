@@ -1,10 +1,11 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
+Project Name: Open Now
+Client: Personal Project
+Author: D Alcausin
 Developer @GA in NYC
 */
 
+@import 'landingpage.css';
 
 /******************************************
 /* SETUP
@@ -23,9 +24,11 @@ Developer @GA in NYC
 
 body {
      color: #121212;
-     font-size: 12px;
+     font-size: 14px;
+     font-weight: 300;
+     color: #ffffff;
      line-height: 1.4;
-     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+     font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 
