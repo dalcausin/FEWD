@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="A simple example of how Javascript can manipulate DOM.">
-    	<meta name="keywords" content="General Assembly, Javascript, JS">
+    	<meta name="description" content="Open Now webapp">
+    	<meta name="keywords" content="Open, Now, hours, store">
 
 		<title>Template</title>
 
@@ -11,33 +11,61 @@
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+
 
 	</head>
 	<body>
 		<div id="container">
-			<div id="background">
-				<img src="img/landingpage/LandingPageBG.png">
-			</div>
 
-			<div id="input_fields">
-				<div id="logo">
-					<img src="img/landingpage/Logo.png">
+<!-- Landing Page Section -->
+			<section id="landing_page">
+				<div id="background">
+					<img src="img/landingpage/LandingPageBG.png">
 				</div>
 
-				<div id="category">
-					<h2>Category</h2>
-						<input type="text" class="input" id="category_input" placeholder="eg. Library">
-				</div>
+				<section id="input_fields">
+					<div id="logo">
+						<img src="img/landingpage/Logo.png">
+					</div>
 
-				<div id="where">
-					<h2>Where</h2>
-						<input type="text" class="input" id="where_input" placeholder="eg. Santa Monica">
-				</div>
+					<div id="category">
+						<h2>Category</h2>
+							<input type="text" class="input" id="category_input" placeholder="eg. Library">
+					</div>
 
-				<div class="gobutton">
-					<img src="img/landingpage/Search + Arrow.png">
-				</div>
-			</div>
+					<div id="where">
+						<h2>Where</h2>
+							<input type="text" class="input" id="where_input" placeholder="eg. Santa Monica">
+					</div>
+
+					<div class="gobutton">
+						<img src="img/landingpage/Search + Arrow.png">
+					</div>
+				</section>
+			</section>
+
+<!-- Landing Page Section -->
+
+
+<!-- Results Section -->
+			<section id="results">
+
+	      <section id="left_nav">
+	        <section id="search_container">
+	          <input type="text" class="results_input" id="results_category_input" placeholder="eg. Library">
+	          <input type="text" class="results_input" id="results_where_input" placeholder="eg. Santa Monica" value="">
+	          <input type="text" class="results_input" id="results_open_input" placeholder="Open now" value="Open Now">
+	        </section>
+						<div id="results_list_container"></div>
+				</section>
+
+				<section id="map_canvas"></section>
+
+			</section>
+
+<!-- Results Section -->
+
 
 		</div><!-- #container -->
 		<script src="js/app.js"></script>

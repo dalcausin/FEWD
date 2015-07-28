@@ -1,0 +1,40 @@
+#left_nav {
+	width: 25vw;
+  height: 100vh;
+  background-color: #FFFFFF;
+  position: absolute;
+  box-shadow: 2px 0px 2px 0px #DDDDDD;
+	z-index: 10;
+}
+
+/*placeholder image for map*/
+#map_canvas {
+	width: 75vw;
+	height: 100vh;
+	position: absolute;
+	left: 25vw;
+	z-index: 100;
+}
+
+.results_input {
+  height: 32px;
+  width: 25vw;
+  background: white;
+	z-index: 10;
+  font-family: 'Roboto';
+  font-size: 1em;
+  padding: 24px 8px;
+  border: 1px solid #dddddd;
+}
+
+#results_open_input::-webkit-input-placeholder {
+	color: #000000;
+}
+
+#results_category_input {
+	left: 0px;
+}
+
+div.gm-style-iw {
+	color: grey;
+}
