@@ -6,7 +6,7 @@
   height: 100vh;
   margin-top: -250px;
   position: fixed;
-  z-index: -10;
+  z-index: 10;
 }
 
 #logo {
