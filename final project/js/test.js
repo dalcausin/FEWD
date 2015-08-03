@@ -105,3 +105,30 @@ this.search = function(){
 // this.createCatInput();
 
 // google.maps.event.addDomListener(window, 'load', this.search());
+
+
+
+google.maps.event.addListener(marker, 'click', function() {
+  infowindow.setContent(place.name);
+  infowindow.open(map, this);
+  console.log(google.maps.places);
+});
+
+google.maps.event.addListener(marker, 'click', function() {
+  infowindow.setContent(place.name);
+  infowindow.open(map, this);
+  console.log(google.maps.places);
+});
+
+
+
+      function clearList() {
+
+        console.log(resultsList.children.length);
+
+        for(var i = 0; i < resultsCount; i++) {
+          resultsList.removeChild(resultsList.childNodes[i]);
+          resultsCount--;
+        }
+
+      };

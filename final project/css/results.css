@@ -38,3 +38,17 @@
 div.gm-style-iw {
 	color: grey;
 }
+
+#card {
+	margin: 24px 16px;
+}
+
+h5 {
+	font-size: 1.25em;
+	color: #000000;
+}
+
+h6 {
+	font-size: 0.7em;
+	color: #000000;
+}
