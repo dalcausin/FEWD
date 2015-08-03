@@ -3,8 +3,23 @@
   height: 100vh;
   background-color: #FFFFFF;
   position: absolute;
-  box-shadow: 2px 0px 2px 0px #DDDDDD;
+  box-shadow: 2px 0px 4px 0px #DDDDDD;
 	z-index: -10;
+}
+
+#transparent_header {
+	height: 48px;
+	width: 75vw;
+	position: absolute;
+	left: 25vw;
+	z-index: -80;
+	background: #000000;
+	color: #ffffff;
+	opacity: 0.4;
+	font-family: 'Gotham';
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 8px;
 }
 
 /*placeholder image for map*/
@@ -23,9 +38,10 @@
 	z-index: 10;
   font-family: 'Roboto';
   font-size: 1em;
-  padding: 24px 8px;
+  padding: 24px 16px;
   border: 1px solid #dddddd;
 }
+
 
 #results_open_input::-webkit-input-placeholder {
 	color: #000000;
@@ -40,12 +56,17 @@ div.gm-style-iw {
 }
 
 #card {
-	margin: 24px 16px;
+	border: 1px solid #dddddd;
+}
+
+.meta {
+	padding: 16px 16px;
 }
 
 h5 {
 	font-size: 1.25em;
 	color: #000000;
+	padding-bottom: 8px;
 }
 
 h6 {
